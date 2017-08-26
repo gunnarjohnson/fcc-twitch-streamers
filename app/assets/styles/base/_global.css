@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: #C99BF2; /* Old browsers */
+  background: -moz-linear-gradient(top, #C99BF2 0%, #6441A4 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #C99BF2 0%,#6441A4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #C99BF2 0%,#6441A4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C99BF2', endColorstr='#6441A4',GradientType=0 ); /* IE6-9 */
+}
+
+h4 {
+  margin: inherit;
+}

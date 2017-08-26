@@ -1,0 +1,67 @@
+#twitch-user {
+
+  &--freecodecamp {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: auto;
+
+    @mixin atLarge {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  &--esl_csgo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: auto;
+
+    @mixin atLarge {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  &--rocketleague {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin: auto;
+
+    @mixin atLarge {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}
+
+.twitch-user {
+
+  &--user_name {
+    width: 100%;
+    margin: 2.5% auto 1.25% auto;
+    text-align: center;
+
+    @mixin atLarge {
+      width: 75%;
+      margin: 2.5% auto 2.5% 10%;
+      text-align: left;
+    }
+  }
+
+  &--online {
+    background-color: $mainLightPurple;
+  }
+
+  &--offline {
+    background-color: $mainPurple;
+  }
+}

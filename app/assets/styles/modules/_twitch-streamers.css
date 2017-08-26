@@ -1,0 +1,28 @@
+.twitch-streamers__box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+#twitch-streamers {
+
+  &__title {
+    display: flex;
+  	justify-content: center;
+  	width: 50%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 66.66%;
+    margin-bottom: 10%;
+    border: 0.25em solid #000000;
+    background-color: $mainLightPurple;
+    color: #000000;
+    font-family: "Squada One", serif;
+  	font-size: 3em;
+  }
+}
