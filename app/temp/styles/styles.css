@@ -490,21 +490,21 @@ h2 {
   }
 
 h4 {
-    margin: 0;
-    font-size: 0.5em;
+  margin: 0;
+  font-size: 0.5em;
 }
 
 @media (min-width: 650px) {
 
 h4 {
-      font-size: 0.75em
+    font-size: 0.75em
 }
   }
 
 @media (min-width: 800px) {
 
 h4 {
-      font-size: 1em
+    font-size: 1em
 }
   }
 
@@ -534,36 +534,37 @@ h4 {
   }
 
 .twitch-logo {
+  width: 100%;
   fill: #000000;
   fill-opacity: 1;
   fill-rule: nonzero;
   stroke: none;
-  -webkit-transform: scale(2);
-          transform: scale(2);
-  width: 100%;
 }
 
 #twitch-streamers__box {
     display: grid;
-    grid-template-columns: [col-start] 10% [col-start--list] 20% [col-start--title] 40% [col-end--title] 20% [col-end--list] 10% [col-end];
-    grid-template-rows: [row-start] 5% [row-start--title] 20% [row-end--title] 25% [row-start--list] 75% [row-end--list] 25% [row-end];
+    grid-template-columns: [col-0] 1fr [col-10] 1fr [col-20] 1fr [col-30] 1fr [col-40] 1fr [col-50] 1fr [col-60] 1fr [col-70] 1fr [col-80] 1fr [col-90] 1fr [col-100];
+    grid-template-rows: [row-0] 1fr [row-1_6] 1fr [row-1_3] 1fr [row-1_2] 1fr [row-2_3] 1fr [row-5_6] 1fr [row-1];
+    height: 100%;
+    width: 100%;
   }
 
 #twitch-streamers__title {
-    grid-column-start: col-start--title;
-    grid-column-end: col-end--title;
-    grid-row-start: row-start--title;
-    grid-row-end: row-end--title;
+    grid-column-start: col-20;
+    grid-column-end: span col-80;
+    grid-row-start: row-0;
+    grid-row-end: span row-1_3;
     -ms-flex-item-align: center;
         align-self: center;
-    justify-self: center;
   }
 
 #twitch-streamers__list {
-    grid-column-start: col-start--list;
-    grid-column-end: col-end--list;
-    grid-row-start: row-start--list;
-    grid-row-end: row-end--list;
+    grid-column-start: col-10;
+    grid-column-end: span col-90;
+    grid-row-start: row-1_3;
+    grid-row-end: span row-5_6;
+    -ms-flex-item-align: center;
+        align-self: center;
     border: 0.25em solid #000000;
     background-color: #d0a3f7;
     color: #000000;
@@ -585,6 +586,7 @@ h4 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    height: 33.4%;
     width: 100%;
     margin: auto;
   }
@@ -615,6 +617,7 @@ h4 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    height: 33.2%;
     width: 100%;
     margin: auto;
   }
@@ -645,6 +648,7 @@ h4 {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+    height: 33.4%;
     width: 100%;
     margin: auto;
   }

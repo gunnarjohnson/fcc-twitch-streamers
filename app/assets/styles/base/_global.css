@@ -31,14 +31,14 @@ h2 {
 }
 
 h4 {
-    margin: 0;
-    font-size: 0.5em;
+  margin: 0;
+  font-size: 0.5em;
 
-    @mixin atSmall {
-      font-size: 0.75em;
-    }
+  @mixin atSmall {
+    font-size: 0.75em;
+  }
 
-    @mixin atMedium {
-      font-size: 1em;
-    }
+  @mixin atMedium {
+    font-size: 1em;
+  }
 }
