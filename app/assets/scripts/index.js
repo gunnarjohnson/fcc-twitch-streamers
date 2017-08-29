@@ -25,7 +25,7 @@ twitchUsers.forEach(function twitchStreamersInfo(username) {
             if (data.stream != null) {
               // Assigns div class names
               document.getElementById("twitch-user--" + username).className = "twitch-user--online";
-              urlDiv.className = "twitch-channel--online";
+              urlDiv.className = "twitch-channel twitch-channel--online";
               // Adds username and game name to divs
               var game = data.stream.game;
               urlDiv.innerHTML = "<h4>" + game + "</h4>";
@@ -34,7 +34,7 @@ twitchUsers.forEach(function twitchStreamersInfo(username) {
             else {
               // Assigns div class name
               document.getElementById("twitch-user--" + username).className = "twitch-user--offline";
-              urlDiv.className = "twitch-channel--offline";
+              urlDiv.className = "twitch-channel twitch-channel--offline";
               // Adds username and offline text to div
               urlDiv.innerHTML = "<h4>OFFLINE</h4>";
             }
