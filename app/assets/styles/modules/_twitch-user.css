@@ -46,12 +46,12 @@
 .twitch-user {
 
   &--user_name {
-    width: 100%;
-    margin: 2.5% auto 1.25% auto;
+    width: 95%;
+    margin: 2.5% 2.5% 1.25% 2.5%;
     text-align: center;
 
     @mixin atLarge {
-      width: 75%;
+      width: 25%;
       margin: 2.5% auto 2.5% 10%;
       text-align: left;
     }

@@ -1,4 +1,5 @@
 html {
+  margin: 0 auto;
   height: 100%;
 }
 
@@ -12,6 +13,32 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#C99BF2', endColorstr='#6441A4',GradientType=0 ); /* IE6-9 */
 }
 
+
+h2 {
+  font-size: 0.5em;
+
+  @mixin atVerySmall {
+    font-size: 0.75em;
+  }
+
+  @mixin atSmall {
+    font-size: 1em;
+  }
+
+  @mixin atMedium {
+    font-size: 1.5em;
+  }
+}
+
 h4 {
-  margin: inherit;
+    margin: 0;
+    font-size: 0.5em;
+
+    @mixin atSmall {
+      font-size: 0.75em;
+    }
+
+    @mixin atMedium {
+      font-size: 1em;
+    }
 }

@@ -1,28 +1,29 @@
-.twitch-streamers__box {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-}
-
 #twitch-streamers {
 
+  &__box {
+    display: grid;
+    grid-template-columns: [col-start] 10% [col-start--list] 20% [col-start--title] 40% [col-end--title] 20% [col-end--list] 10% [col-end];
+    grid-template-rows: [row-start] 5% [row-start--title] 20% [row-end--title] 25% [row-start--list] 75% [row-end--list] 25% [row-end];
+  }
+
   &__title {
-    display: flex;
-  	justify-content: center;
-  	width: 50%;
+    grid-column-start: col-start--title;
+    grid-column-end: col-end--title;
+    grid-row-start: row-start--title;
+    grid-row-end: row-end--title;
+    align-self: center;
+    justify-self: center;
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    width: 66.66%;
-    margin-bottom: 10%;
+    grid-column-start: col-start--list;
+    grid-column-end: col-end--list;
+    grid-row-start: row-start--list;
+    grid-row-end: row-end--list;
     border: 0.25em solid #000000;
     background-color: $mainLightPurple;
     color: #000000;
     font-family: "Squada One", serif;
-  	font-size: 3em;
+    font-size: 3em;
   }
 }

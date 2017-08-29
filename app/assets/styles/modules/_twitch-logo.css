@@ -1,6 +1,8 @@
-#twitch-logo__style {
+.twitch-logo {
   fill: #000000;
   fill-opacity: 1;
   fill-rule: nonzero;
   stroke: none;
+  transform: scale(2);
+  width: 100%;
 }

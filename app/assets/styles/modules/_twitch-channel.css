@@ -1,13 +1,13 @@
 .twitch-channel {
   display: block;
-  width: 100%;
-  margin: 1.25% auto 2.5% auto;
+  width: 95%;
+  margin: 1.25% 2.5% 2.5% 2.5%;
   font-style: italic;
   text-align: center;
 
   @mixin atLarge {
-    width: 23%;
-    margin: 2.5% 10% 2.5% auto;
+    width: 50%;
+    margin: 2.5% 10% 2.5% 5%;
     text-align: right;
   }
 
